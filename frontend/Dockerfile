@@ -1,5 +1,5 @@
 # ========== Build Stage ==========
-FROM node:20.19.3 as builder
+FROM node:20.19.3 AS builder
 
 WORKDIR /app
 
