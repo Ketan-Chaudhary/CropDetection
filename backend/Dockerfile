@@ -4,10 +4,8 @@ COPY . /app
 
 WORKDIR /app
 
-RUN npm install 
+RUN npm install
 
-EXPOSE 9001:9001
+EXPOSE 9001
 
-ENV PLANT_ID_API_KEY=PLANT_ID_API_KEY
-
-CMD ["node","server.js"]
+CMD ["node", "server.js"]
