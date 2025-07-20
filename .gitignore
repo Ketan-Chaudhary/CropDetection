@@ -1,0 +1,22 @@
+# Local Terraform files
+*.tfstate
+*.tfstate.*
+*.tfvars
+*.tfvars.json
+*.log
+
+# .terraform directory (this is where Terraform stores provider plugins and other dependencies)
+.terraform/
+
+.terraform.*
+
+# Crash log files
+crash.log
+
+# Override files
+override.tf
+override.tf.json
+
+# CLI configuration files
+*.tfplan
+*.tfplan.*
