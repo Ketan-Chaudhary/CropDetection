@@ -62,6 +62,11 @@ resource "aws_instance" "swarm_nodes" {
   key_name               = var.key_name
   vpc_security_group_ids = [aws_security_group.swamr_sg.id]
 
+  metadata_options {
+    http_tokens   = "required" # Enforces IMDSv2
+    http_endpoint = "enabled"
+  }
+
   #Install Docker automatically
   user_data = <<-EOF
                 #!/bin/bash
