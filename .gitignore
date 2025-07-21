@@ -1,0 +1,55 @@
+# Byte-compiled / temporary files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*.retry
+
+# Logs
+*.log
+
+# SSH files
+*.pem
+*.key
+*.pub
+.ssh/
+
+# Vault passwords (do not commit these)
+.vault_pass.txt
+.vault_pass
+
+# Inventory artifacts
+*.inventory
+inventory/host_vars/*
+inventory/group_vars/*
+
+# Avoid accidental secrets exposure
+secrets.yml
+vault.yml
+
+# Local settings / override files
+*.cfg
+*.ini
+ansible.cfg
+.env
+*.env
+
+# Vagrant
+.vagrant/
+
+# Virtual environment
+.venv/
+env/
+venv/
+
+# IDE/editor specific files
+.idea/
+.vscode/
+*.swp
+*.swo
+*.bak
+.DS_Store
+
+# Test output
+output/
+test-results/
